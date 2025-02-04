@@ -1,41 +1,44 @@
-# Proyectos Personales Bloque 2
+# First Steps: Bloq 2.
 
-En este repositorio dejaré algunos de los ejercicios y proyectos que voy haciendo al mismo tiempo que el curso de Blockchain Accelerator para utilizar y consolidar los conocimientos de este bloque.
-
-
+In this repository I will be uploading some of the exercises and projects that I am doing while learning with the Blockchain Accelerator Course with the aim of getting to know them fully and feel comfortable with this technology and data.
 
 
-## 🚀Ejercicios
 
-- **Calculator2.sol**: operaciones y ejercicios matemáticos adicionales a los ya vistos.
-- **Cajero.sol**: 2 funcionalidades básicas en el funcionamiento de un cajero.
-- **Users.sol**: intentar añadir un usuario.
+
+## 🚀Exercises
+
+- **Calculator2.sol**: math exercises to manage data.
+- **Cajero.sol**: 2 basic functions for an ATM Machine.
+- **Users.sol**: to try to add a new user.
 
 
 ## 📋Descripción
 
-Una descripción un poco más detallada de cada ejercicio.
+A more detailed description of each exercise.
 
 ### 📐Calculator2.sol:
-- La primera *función* de ellas es la función **"module"**, que nos permite calcular el módulo de un número, es decir, el cociente que resulta de una división (num % 2 = modulo). Esto, aunque sencillo, puede sernos de gran ayuda en otras operaciones y funcionalidades más complejas (como veremos en la tercera función del contrato).
-- Con la segunda *función* o función **"square"** podremos elevar un número que indiquemos a la potencia que queramos. Puesto que en solidity no hay una función para elevar a una potencia como en otros lenguajes, tendremos que hacerlo mediante un bucle for como vemos en el código.
-- Con la tercera *función* **"parOimpar"**, podremos pasarle un número y saber si es par, impar o 0 (ya que el 0 puede tener ciertos problemas matemáticamente hablando). Esta sería una posible implementación de calcular el módulo de un número, ya que si el módulo del número es 0, significa que es par y si es 1 significa que es impar. 
+- The first *function* is the **"module"** function, which allows us calculate the remainder of a division (num % 2 = module). Although this can be a very simple operation, this could be of great help in other operations or even more complex functions (and so we'll see in the third function).
+- With the second *function* or **"square"** function we will be able to raise a number to the power we need in each case. Given that in solidity we find no native function to do this, we'll have to do it using a for loop as it can be seen in the code.
+
+- With the **"parOimpar"** *function*, a number can be sent to it, in order to know if a number is even or odd (or 0). As I mentioned before, this is a real implementation for the module function because if the module equals 0, then it means it is an even number and if it equals 1 it is an odd number.
 
 
 ### 🏧Cajero.sol:
-La idea de este contrato es simular de forma sencilla y simple las dos principales funciones que tiene un cajero para un usuario (ingresar y retirar dinero).
-- Tendremos como *variable global* **"fondos"**, que nos servirá para conocer el total de dinero del que disponemos para nuestras dos funciones.
-- La primera *función externa* **"ingresar"** básicamente llama a nuestra función privada "addition", cuyo propósito es hacer la suma de la cantidad que indiquemos en la operación de ingresar y de los fondos totales de los que disponemos.
-- La segunda *función* **"retirar"** tiene el mismo mecanismo que la anterior, llama a la privada "substraction", que resta a los fondos totales de los que disponemos la cantidad que queremos retirar del cajero.
-- Como *modificador*, en la función de retirar dinero, tenemos **"impossibleTransac"**, que nos revierte la función en caso de que queramos retirar una cantidad de dinero superior a la que tenemos en los fondos totales.
+The main idea of this Smart Contract is to simulate in a simple way, two of the functions that an ATM Machine has (deposit an withdraw money).
+- As a *global variable* we have **"fondos"**, that we'll use to know the total amount of money we have.
+- The first **"ingresar"** *external function*, calls the **"addition"** *private function* that adds the amount we write to the total amount of money we have.
+- The second **"retirar"** *external function* has the same structure than the last one mentioned. It calls the **"substraction"** *private function* that subtracts the number we write to the total amount we have available.
+- As a *modifier*, in the second function we use **"impossibleTransac"**, which will revert the function execution in case we want to withdraw more money than we already have available.
 
 
 ### 🔒Users.sol:
-La idea de este smart contract es simular una base de datos (de forma simple con un array) de usuarios, intentando introducir uno nuevo. En caso de que el usuario ya se encuentre registrado recibiremos un mensaje de que ya existe y en caso contrario será aceptado y añadido.
-- La *variable global* **user** es un array que para este caso práctico sencillo hace las veces de "base de datos", almacenando una serie de strings (nombres de usuario) en él.
-- La *función externa* **"insert1"**, recibe como parámetro un string (el nombre del usuario). Con el bucle for recorremos el array mencionado anteriormente y comprobamos que el string introducido se encuentre dentro, en cuyo caso nos lo mostrará mediante texto. En caso contrario, hacemos push de ese string al array y nos muestra un mensaje de que se acepta.
-- El *modifier* **short** utiliza un require para obligar o requerir que ocurran ciertas condiciones, en este caso que el string introducido sea mayor de 3 caracteres. Si esto no se cumple, la función no se ejecutará y recibiremos el mensaje de que el usuario es demasiado corto.
-- Como en solidity no podemos usar ".length" como en otros lenguajes para el string, usaremos la opción **"bytes(string).length"**.
+The main idea of this Smart Contract is to simulate a data base (in a very simple way for the exercise using an array) with users, trying to add a new one. In case the user was already in de DB, we will receive a message showing that the user already exists and, on the other hand, the user will be accepted and pushed into the array.
+- The **"user"** *global variable* is an array that we will be using as a Data Base, storing strings (usernames) in it.
+- The **"insert1"** *external function* receives a string as a parameter (new username). With the "for loop" we iterate the array mentioned before and check if the string received is already stored in the array. In that case we'll see a message showing that is already in use. On the other hand, we push the new username into the array showing a message of success.
+- The **"shot"** *modifier* uses the "require" statement to check some conditions. In this case, the condition is that the username is longer than 3 letters. If this is not happening, the function will not execute, receiving a message that the username is too short.
+- In solidity there is no ".length" that can be used for strings, so we use **"bytes(string).length"**.
+
+
 ## Tech Stack
 
 **Client:** Solidity
@@ -46,4 +49,3 @@ La idea de este smart contract es simular una base de datos (de forma simple con
 ## Authors
 
 - [@gcuellarm](https://www.github.com/gcuellarm)
-
