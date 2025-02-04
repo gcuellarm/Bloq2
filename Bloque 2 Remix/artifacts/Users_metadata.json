@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "user_",
+						"type": "string"
+					}
+				],
+				"name": "insert1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Bloque 2 Remix/Users.sol": "Users"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Bloque 2 Remix/Users.sol": {
+			"keccak256": "0xdcc39aa430932dc89d0e925d103feaf9d639ca6d2ec755ddfa2e7627b7f95aed",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://7f6cc8c91729b139ffe69e3e10cbc7745fc72a10a4f524977828447deb5fe118",
+				"dweb:/ipfs/QmUrvCqaKnqcPnR5K5ZoWjZVeWp66GvxLi2TB1tkfG4pJd"
+			]
+		}
+	},
+	"version": 1
+}

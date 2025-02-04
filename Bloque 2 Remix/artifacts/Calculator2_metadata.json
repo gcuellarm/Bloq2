@@ -1,0 +1,152 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "resultadoModule_",
+						"type": "uint256"
+					}
+				],
+				"name": "moduleEvent",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "base_",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "exponent_",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "resultadoSquare_",
+						"type": "uint256"
+					}
+				],
+				"name": "squareEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					}
+				],
+				"name": "module",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "resultadoModule_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					}
+				],
+				"name": "parOimpar",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "base_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "exponent_",
+						"type": "uint256"
+					}
+				],
+				"name": "square",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "resultadoSquare_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Bloque 2 Remix/Calculator2.sol": "Calculator2"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Bloque 2 Remix/Calculator2.sol": {
+			"keccak256": "0x55b4e6ac396ae1c1a26bc6f9e9dd81ad141461a4147ac1cbc303dbbccaaf0cbf",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://7571a225b452a459267d7d164faf01f90b3e5b2c92a121cd45fcb84edd5591b2",
+				"dweb:/ipfs/QmPTVP3i7yKqXkVd6CtQvvoXM87peAWwakstEd6pnbNYw5"
+			]
+		}
+	},
+	"version": 1
+}

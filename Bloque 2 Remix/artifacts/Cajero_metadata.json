@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "fondos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					}
+				],
+				"name": "ingresar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "retirar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Bloque 2 Remix/Cajero.sol": "Cajero"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Bloque 2 Remix/Cajero.sol": {
+			"keccak256": "0x6557e616ad352562da6d0886b5836442dc9bdba20aa4d88c2f9edb7ed115ea39",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://8b9ba010543b2fb6ab341b8b5a7308cc44fe02e4023dfb78d58672d06c9b4670",
+				"dweb:/ipfs/QmbaJyPp7PGjEgf2YXEX2bjH2GKjCyy5hfapibvmcSGD9X"
+			]
+		}
+	},
+	"version": 1
+}
